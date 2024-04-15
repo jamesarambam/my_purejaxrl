@@ -49,7 +49,6 @@ class ActorCritic(nn.Module):
 
         return pi, jnp.squeeze(critic, axis=-1)
 
-
 class Transition(NamedTuple):
     done: jnp.ndarray
     action: jnp.ndarray
